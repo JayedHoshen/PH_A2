@@ -1,0 +1,46 @@
+/* ----------- common css ------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #1a0b2e;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.container {
+  width: 75%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn {
+}
+/* ----------- main css --------- */
+
+/* ------------- responsive mobile device ---------- */
+@media screen and (max-width: 576px) {
+}
