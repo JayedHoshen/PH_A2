@@ -42,6 +42,15 @@ p {
   margin: 0 auto;
 }
 
+.section-title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+  text-transform: capitalize;
+}
+
 .btn {
 }
 /* ----------- main css --------- */
@@ -57,13 +66,6 @@ p {
   text-align: center;
   padding-bottom: 80px;
   border-bottom: 1px solid #ffffff3b;
-}
-
-#about .about-heading h2 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 16px;
-  text-transform: capitalize;
 }
 
 #about .about-heading > p {
@@ -92,10 +94,69 @@ p {
   margin-bottom: 16px;
 }
 
+/* choose techWave styles */
+#choose {
+  padding: 120px 0;
+  background-color: #230e3d;
+}
+
+#choose .choose-content {
+  margin-top: 40px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.choose-content .card-one {
+  grid-row: span 2;
+}
+
+.choose-content .card-two,
+.choose-content .card-three,
+.choose-content .card-four {
+  grid-column: span 2;
+}
+
+.choose-content .choose-card {
+  color: #fff;
+  padding: 40px;
+  border-radius: 40px;
+  background-color: #35116466;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  transition: all 0.4s ease-in-out 0.1s;
+}
+
+.choose-content .choose-card:hover {
+  border-radius: 20px;
+}
+
+.choose-content .choose-card > img {
+  width: 60px;
+  height: 60px;
+}
+
+.choose-content .choose-card > h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 16px 0;
+}
+
+.choose-content .choose-card > p {
+  line-height: 24px;
+}
+
 /* ------------- responsive mobile device ---------- */
 @media screen and (max-width: 576px) {
   .container {
     width: 95%;
+  }
+
+  .section-title {
+    font-size: 2rem;
   }
 
   #about {
@@ -106,10 +167,6 @@ p {
     padding-bottom: 40px;
   }
 
-  #about .about-heading h2 {
-    font-size: 2rem;
-  }
-
   #about .about-items {
     margin-top: 40px;
     gap: 40px;
@@ -118,5 +175,33 @@ p {
 
   .about-items .item h4 {
     font-size: 2.5rem;
+  }
+
+  #choose {
+    padding: 40px 0px;
+  }
+
+  #choose .choose-content {
+    gap: 16px;
+    margin-top: 16px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .choose-content .card-one {
+    grid-row: span 1;
+  }
+
+  .choose-content .card-two,
+  .choose-content .card-three,
+  .choose-content .card-four {
+    grid-column: span 1;
+  }
+
+  .choose-content .choose-card {
+    padding: 24px;
+  }
+
+  .choose-content .choose-card > h4 {
+    font-size: 1.35rem;
   }
 }
