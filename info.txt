@@ -1,6 +1,7 @@
+Github Repo Link: https://github.com/JayedHoshen/PH_A2
+Live Site link: https://jayedhoshen.github.io/PH_A2/
+
 link: https://github.com/ProgrammingHero1/B13-A02-TechWave
-
-
 আজকে কি সাবমিট করবেঃ
 তোমার কোডের গিটহাব রিপোজিটরি লিংক সাবমিট করতে হবে এবং লাইভ লিংক জেনারেট করে সেটা সাবমিট করবে। 
 Example:
