@@ -63,6 +63,18 @@ p {
   }
 }
 
+@keyframes badge-animate {
+  0% {
+    background: linear-gradient(#00ff88);
+  }
+  50% {
+    background: linear-gradient(#fff);
+  }
+  100% {
+    background: linear-gradient(#00ff88);
+  }
+}
+
 .btn {
   color: #fff;
   padding: 12px 16px;
@@ -72,7 +84,9 @@ p {
   border-radius: 20px;
   animation: btn-animate 2s linear 1s infinite alternate;
 }
+
 /* ----------- main css --------- */
+
 /* navbar styles */
 #navbar {
   padding: 24px 0px;
@@ -111,7 +125,32 @@ p {
   text-align: center;
 }
 
-#banner .navbar-content h1 {
+#banner .image-group {
+  height: 350px;
+  position: relative;
+}
+
+.image-group .img-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#new {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #1a0b2e;
+  padding: 8px 16px;
+  border-radius: 15px;
+  background-color: #00ff88;
+  position: absolute;
+  top: 15px;
+  left: 58%;
+  animation: badge-animate 3s linear 1s infinite alternate;
+}
+
+#banner .banner-content h1 {
   color: #fff;
   font-size: 3.75rem;
   font-weight: 900;
@@ -383,18 +422,26 @@ footer .footer-container > ul {
   }
 
   #banner .image-group {
-    width: 350px;
-    height: 350px;
+    height: 200px;
     position: relative;
   }
 
-  #banner #microphone {
+  .image-group .microphone {
+    width: 15%;
+  }
+
+  .image-group .img-div {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
   }
 
-  #banner .navbar-content h1 {
+  .image-group .img-div img {
+    width: 100%;
+  }
+
+  #banner .banner-content h1 {
     font-size: 2.75rem;
     margin-bottom: 8px;
     margin-top: 24px;
